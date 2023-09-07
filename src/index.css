@@ -19,10 +19,11 @@ text-decoration: none;
 }
 
 :root{
-    --color-bg:#043811;
-    --color-bg-variant:#415c48;
-    --color-primary:#b3c4b3;
+    --color-bg:#0c0a0d;
+    --color-bg-variant:#5b5b5c;
+    --color-primary:#aeaeb0;
     --color_white:#fff;
+    --color_black:#00000a;
 
     --transition: all 400ms ease;
 
