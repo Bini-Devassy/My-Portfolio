@@ -1,24 +1,140 @@
 header{
-    height: 100vh;
-    padding: 7rem;
-    padding-top: 1rem;
-    overflow: hidden;
+    height: 60vh;
+    width: 100%;
+    padding-top: 4rem;
+   background: var(--color-bg-variant);
+   color: var(--color_white);
+   box-shadow:  5px 5px 10px #2a2929;
+   -moz-box-shadow:  5px 5px 10px #2a2929;
+   -webkit-box-shadow: 5px 5px 10px  #2a2929;
+   -khtml-box-shadow:  5px 5px 10px #2a2929;
+   
+  
 }
 
+
 .header_container{
-    text-align: center;
     height: 80%;
+    width: 100%;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+h1 ,h2, h5 {
+  padding-left: 2rem;
+}
+/*----------------check..........................*/
+
+
+h5{
+  text-align: left;
+  
+}
+h2 {
+  max-width: 60ch;
+  text-align: left;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }
 
 
 
 /*----------------------------------FOR CTA-------------------*/
 .cta {
-    margin: 2.5rem;
+    margin-top: 2.5rem;
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: 3rem;
+    justify-content: left;
 }
 
 
@@ -26,45 +142,66 @@ header{
 
 .header_socials{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 0.8rem;
+    gap: 1rem;
     position: absolute;
-    left: 0;
-    bottom: 3rem;
+    left: 40%;
+    bottom: -9rem;
     font-size: 1.5rem;
 }
 
 .header_socials::after{
-    content: "";
-    width: 1px;
-    height: 2rem;
+    content: " ";
     background: var(--color-primary);
-   
+    content:" ";
+   display: block;
+   height: .5px;
+   width: 50px;
+   top: 50%;
+   left: 0;
     
+}
+
+.header_socials::before{
+  content: " ";
+  background: var(--color-primary);
+  content:" ";
+ display: block;
+ height: .5px;
+ width: 50px;
+ top: 50%;
+ left: 0;
+  
 }
 
 
 
 /*----------------------ME---------------*/
 .me{
-    background: linear-gradient( var(--color-primary), transparent);
-    width: 20rem;
-    height: 25rem;
+   
+    width: 28rem;
+    height: 28rem;
     position:absolute;
-    left: calc(50% - 11rem);
-    margin-top: 1rem;
+    right: 1rem;
+    margin-top: -2rem;
     overflow: hidden;
-    border-radius: 12rem 12rem 12rem 12rem;
-    padding: 5rem 1.5rem 1.5rem 1.5rem;   
+    border-radius: 50%;
+    box-shadow:  5px 10px 10px #2a2929;
+    -moz-box-shadow:  5px 10px 10px #2a2929;
+    -webkit-box-shadow: 5px 10px 10px  #2a2929;
+    -khtml-box-shadow:  5px 10px 10px #2a2929;
+    
 
 }
+
 
 /*----------------------SCROLL DOWN---------------*/
 .scroll_down {
     position: absolute;
-    right: -2.5rem;
-    bottom: 5rem;
+    right: 2rem;
+    overflow: hidden;
+    bottom: -1rem;
     transform: rotate(90deg);
     font-weight: 200;
     font-size: 0.9rem;
@@ -72,144 +209,19 @@ header{
 
 .scroll_down:hover {
   transform: rotate(-20deg);
+  color: white;
 
 }
 
+  .btn{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+ }
 
-
-/*----------------------------------------------*/
-.container-pic {
-    max-width: 900px;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-  }
-  
-  .card-wrapper {
-    width: 400px;
-    height: 500px;
-    position: relative;
-  }
-  
-  .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 350px;
-    height: 450px;
-    transform: translate(-50%, -50%);
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
-    cursor: pointer;
-    transition: 0.5s;
-  } 
-    .card-image {
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      width: 100%;
-      height: 100%;
-      z-index: 2;
-      background-color: #000;
-      transition: .5s;
-    }
-    
-    &:hover img {
-      transition: .5s;
-    }
-  
-  
-  .card:hover .card-image {
-    transform: translateY(-100px);
-    transition: all .9s;
-  }
-  
-  /**** Social Icons *****/
-  
-  .social-icons {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 3;
-    display: flex;
-  }
-   
-  .social-icons li {
-      list-style: none;
-  }  
-      .social-icons a {
-        position: relative;
-        display: block;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
-        text-align: center;
-        background: #fff;
-        font-size: 23px;
-        color: #333;
-        font-weight: bold;
-        margin: 0 6px;
-        transition: .4s;
-        transform: translateY(200px);
-        opacity: 0;
-      } 
-
-  .card:hover .social-icons li a {
-    transform: translateY(0px);
-    opacity: 1; 
-  }
-  
-  .social-icons li a:hover {
-    background: #000; 
-    transition: .2s;
-    .fab {
-      color: #fff;
-    } 
-  }
-  
-  .social-icons li a .fab {
-    transition: .8s;
-  }  
-  .social-icons :hover {
-        transform: rotateY(360deg);
-        color: #fff;
-    } 
-  
-  
-  .card:hover li:nth-child(1) a {
-      transition-delay: 0.1s;
-  }
-  .card:hover li:nth-child(2) a {
-    transition-delay: 0.2s;
-  }
-  .card:hover li:nth-child(3) a {
-    transition-delay: 0.3s;
-  }
-  .card:hover li:nth-child(4) a {
-    transition-delay: 0.4s;
-  }
-  
-
+.btn :hover{
+  box-shadow:  0px 8px 15px black;
+}
  
-
-  
-  .profile-two .social-icons li a {
-    border-radius: 50%;
-  }
-  
-  .card:hover .profile-img--two {
-    transform: rotateY(180deg);
-  }
-  
-  .card:hover .jane {
-    bottom: 0;
-    left: 0;
-    transition-delay: 0.5s;
-    opacity: 1;
-  }
-  
 
 
 
@@ -225,6 +237,9 @@ header{
     
       header{
         height: 68vh;
+        grid-template-columns: 1fr;
+        gap: 0;
+        
 
       }  
     
@@ -235,11 +250,19 @@ header{
 
 @media screen and (max-width: 600px) {
     header{
-        height: 100vh;
-       
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        width: var(--container--width-sm);
+
     }
-    .header_socials, .scroll_down {
+     .scroll_down {
         display: none;
     }
- 
+    .me{
+     display: none;
+    }
+    
+   
+
 }
